@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabor & Tradición | Restaurante</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+    body { line-height: 1.6; color: #333; background-color: #fcfcfc; }
+    header { background: #1a1a1a; color: #fff; padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { font-size: 1.5rem; color: #e67e22; }
+    nav a { color: #fff; text-decoration: none; margin-left: 1.5rem; font-weight: 500; }
+    .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80') center/cover; color: #fff; height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 1rem; }
+    .hero h2 { font-size: 2.8rem; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1.2rem; margin-bottom: 1.5rem; }
+    .btn { background: #e67e22; color: #fff; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 4px; font-weight: bold; }
+    .container { max-width: 1000px; margin: 3rem auto; padding: 0 1rem; }
+    .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 1.5rem; }
+    .card { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+    .card-content { padding: 1.5rem; }
+    .card-title { display: flex; justify-content: space-between; font-weight: bold; font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .price { color: #e67e22; }
+    footer { background: #1a1a1a; color: #aaa; text-align: center; padding: 2rem; margin-top: 3rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sabor & Tradición</h1>
+    <nav>
+      <a href="#menu">Menú</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Gastronomía de Autor</h2>
+    <p>Ingredientes frescos, recetas tradicionales y un ambiente inolvidable.</p>
+    <a href="#menu" class="btn">Ver Menú</a>
+  </section>
+
+  <main class="container" id="menu">
+    <h2 style="text-align: center; font-size: 2rem;">Nuestros Platos Estrellas</h2>
+    
+    <div class="menu-grid">
+      <div class="card">
+        <div class="card-content">
+          <div class="card-title">
+            <span>Corte Tomahawk 800g</span>
+            <span class="price">$35.00</span>
+          </div>
+          <p>Carne de res madurada a la parrilla con mantequilla de hierbas y papas rústicas.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <div class="card-title">
+            <span>Risotto de Trufa</span>
+            <span class="price">$22.00</span>
+          </div>
+          <p>Arroz arborio, hongos silvicolas, queso parmesano reggiano y aceite de trufa blanca.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <div class="card-title">
+            <span>Ceviche Mixto</span>
+            <span class="price">$18.00</span>
+          </div>
+          <p>Pesca del día, camarones, leche de tigre, camote glaseado y cancha crujiente.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="contacto">
+    <p>📍 Calle Gastronómica 123 | 📞 +503 2222-3333</p>
+    <p style="margin-top: 0.5rem;">Abierto de Martes a Domingo - 12:00 PM a 10:00 PM</p>
+  </footer>
+
+</body>
+</html>
